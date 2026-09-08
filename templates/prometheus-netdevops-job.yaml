@@ -1,0 +1,18 @@
+  - job_name: netdevops-devices
+    metrics_path: /probe
+    params:
+      module: [icmp]
+    static_configs:
+      - targets:
+          - vyos01.netagent.srv6.dk
+          - vyos02.netagent.srv6.dk
+          - vyos03.netagent.srv6.dk
+          - vyos04.netagent.srv6.dk
+          - vyos05.netagent.srv6.dk
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: 127.0.0.1:9115

@@ -1,0 +1,3 @@
+set system host-name vyos01
+set interfaces ethernet eth0 description WAN-UPLINK-MGMT
+set service ssh disable-password-authentication
