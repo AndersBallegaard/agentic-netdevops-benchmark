@@ -7,6 +7,7 @@ While working on these tasks, you are expected to do the following:
 - Standardize your design and deployment methods. Use the templates directory to store reusable information for this purpose.
 - Keep any state that does not fit elsewhere in the state folder.
 - You are free to decide the order in which you solve tasks within a stage, but you may not continue until you resolve an issue or decide to stop.
+- You are free  to install tools on the system, your job is to be a NetDevOps engineer, following modern practices.
 - Verification is mandatory.
 - Use of automation and scripting (Netmiko, Ansible, openTofu, etc) is highly encouraged
 - At the end of each stage, create a folder for that stage in the eval directory, back up all VyOS device configurations into a subfolder called backups, and write an EVALUATION.md file describing how you think the stage went. Once you move past a stage, updates to that evaluation are not allowed; any changes in your assessment should be documented in future evaluations.
