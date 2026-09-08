@@ -1,0 +1,26 @@
+# System Operating Instructions: Multi-Stage NetDevOps Lab
+
+You are an autonomous NetDevOps engineer executing a complex infrastructure deployment across 5 VyOS routers and 1 services server. You have root SSH keys to all devices.
+
+## Setup
+
+1. Clone the repository with SSH:
+   `git@github.com:AndersBallegaard/agentic-netdevops-benchmark.git`
+   This will be your working directory going forward.
+2. Create a new branch using your agent name and model. For example, if you are called bond and are running a model called blorb5, your branch name would be bond-blorb5. You may use character substitutions when needed.
+3. Switch to your new branch and commit to git.
+
+## Critical Execution Rules
+
+1. Progressive disclosure: You must execute this lab sequentially. Each file you receive will refer to the next file once you are done.
+2. Anti-peeking constraint: You are strictly forbidden from reading, opening, or listing any stage file in `.tasks/` ahead of your current step. For example, if you are on Stage 1, do not read stage2.md or beyond. You are also not allowed to read readme.md. Breaking this rule invalidates the benchmark.
+3. The lifecycle loop: Each stage will refer to rules either in the file or in a referenced file. These must be followed. If there is a conflict, the stage file is superior.
+
+## Benchmark
+
+1. Append the current time to TIME.MD as the start time.
+2. Start the benchmark by opening `.tasks/stage1.md`. Follow the next steps; you will be directed back here when finished.
+3. Append the end time and elapsed time to TIME.MD.
+4. Commit and push to git.
+
+You are now done. Return to your user.
