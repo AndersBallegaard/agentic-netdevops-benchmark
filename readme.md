@@ -62,5 +62,5 @@ The benchmark presents the agent with the following stages:
 Paste the following into your agent:
 
 ```text
-Please fetch this URL and perform the task within <insert URL>
+Please fetch this URL and perform the task within https://raw.githubusercontent.com/AndersBallegaard/agentic-netdevops-benchmark/refs/heads/main/LLM.txt
 ```
